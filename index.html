@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scr.js"></script>
+</head>
+
+<body>
+    <div style="border: 2px solid black
+    ;">
+
+        <!-- Heading  -->
+        <div class="inner1">
+            <h3>Challenge 5 : Blackjack</h3>
+            <h4 id="title"> Let's Play!</h4>
+        </div>
+
+        <!-- Background Image with Boxes and Button  -->
+        <div class="inner2">
+
+            <div class="flex">
+            <!-- Users Cared  -->
+                <div class="child">
+                    <p id="userscore"> You: 0</p>
+                    <p style="color: red;" id="userstatus"></p>
+                    
+
+                    <div id="cardrow">
+                        <!-- The randomly choosen images will come here  -->
+                    </div>
+               
+                </div>
+                <!-- Computer's Card  -->
+                <div class="child">
+                    <p id="computerscore"> Dealer: 0 </p>
+                    <p style="color: red;" id="computerstatus"></p>
+                    
+
+                    <div id="usercardrow">
+                        <!-- The randomly choosen images will come here  -->
+                    </div>
+               
+                </div>
+
+            </div>
+
+            <!-- Button Div -->
+            <div class="btn-container">
+
+                <div style="border: 1px solid black;">
+                <button  id="hitbtn" onclick="hit()" class="btn" style="background-color: dodgerblue;"> Hit</button>
+                <button id="standbtn" onclick="stand()" class="btn" style="background-color: rgb(219, 219, 104);"> Stand</button>
+                <button onclick="deal()"  class="btn" style="background-color: rgb(248, 68, 68);">Deal</button>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Score Table  -->
+        <div class="inner3">
+            <table >
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td id="wins">0</td>
+                    <td id="losses">0</td>
+                    <td id="draws"> 0</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+ 
+
+    <!-- Audio Sounds -->
+
+    <audio id="loose" >
+        <source src="sounds/aww.mp3"  />
+    </audio>
+
+    <audio id="win" >
+        <source src="sounds/cash.mp3"  />
+    </audio>
+
+    <audio id="cardput" >
+        <source src="sounds/swish.m4a" />
+    </audio>
+</body>
+</html>

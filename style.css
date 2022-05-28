@@ -1,0 +1,59 @@
+.inner1{
+    text-align: center;
+}
+.inner2 {
+    background: url("https://media.istockphoto.com/photos/poker-table-felt-background-picture-id510657755?k=20&m=510657755&s=612x612&w=0&h=fvv-HCmYNGwMiZO8ZVHnz2KwYkJZRfXTDXxwHK-sAdw=");
+    height: 600px;
+    background-size: cover;
+    
+}
+.flex{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+.child {
+    border: 2px solid black;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+.btn-container{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+
+}
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.inner3{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+th,td {
+    padding: 5px;
+
+}
+.card {
+width: 100px;
+height: 150px;
+margin: 15px;
+}
+
+#cardrow{
+    
+    margin: 20px;
+    padding: 20px;
+}
